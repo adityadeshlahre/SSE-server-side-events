@@ -7,8 +7,7 @@
     const evtSource = new EventSource("http://localhost:3000/events");
 
     evtSource.onmessage = (event) => {
-      const div = document.getElementById("output");
-      div.innerHTML += `<p>${event.data}</p>`;
+	    document.getElementById("output").innerHTML += event.data + "<br>";
     };
   </script>
 </body>

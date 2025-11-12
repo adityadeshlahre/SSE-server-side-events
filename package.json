@@ -11,6 +11,7 @@
     "typescript": "^5"
   },
   "dependencies": {
+    "eventsource": "^4.0.0",
     "express": "^5.1.0"
   }
 }
