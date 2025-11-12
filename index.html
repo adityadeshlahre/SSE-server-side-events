@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <h2>SSE</h2>
+  <div id="output"></div>
+  <script>
+    const evtSource = new EventSource("http://localhost:3000/events");
+
+    evtSource.onmessage = (event) => {
+      const div = document.getElementById("output");
+      div.innerHTML += `<p>${event.data}</p>`;
+    };
+  </script>
+</body>
+</html>
